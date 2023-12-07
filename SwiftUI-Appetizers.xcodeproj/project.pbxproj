@@ -23,7 +23,7 @@
 		662204D92B1CCADB00F53973 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662204D82B1CCADB00F53973 /* LoadingView.swift */; };
 		662204DB2B1CD5C000F53973 /* Color+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662204DA2B1CD5C000F53973 /* Color+Ext.swift */; };
 		662204DD2B1CEED200F53973 /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 662204DC2B1CEED200F53973 /* RemoteImage.swift */; };
-		66EC8D912B200C9300DE835D /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC8D902B200C9300DE835D /* DetailView.swift */; };
+		66EC8D912B200C9300DE835D /* AppetizerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC8D902B200C9300DE835D /* AppetizerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,7 +44,7 @@
 		662204D82B1CCADB00F53973 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		662204DA2B1CD5C000F53973 /* Color+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ext.swift"; sourceTree = "<group>"; };
 		662204DC2B1CEED200F53973 /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
-		66EC8D902B200C9300DE835D /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		66EC8D902B200C9300DE835D /* AppetizerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 			children = (
 				662204D42B1C219800F53973 /* AppetizerListViewModel.swift */,
 				662204C42B1BB51100F53973 /* AppetizerListView.swift */,
-				66EC8D902B200C9300DE835D /* DetailView.swift */,
+				66EC8D902B200C9300DE835D /* AppetizerDetailView.swift */,
 			);
 			path = AppetizerListView;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 				662204B72B1BAC9400F53973 /* SwiftUI_AppetizersApp.swift in Sources */,
 				662204D72B1C23C700F53973 /* Alert.swift in Sources */,
 				662204C52B1BB51200F53973 /* AppetizerListView.swift in Sources */,
-				66EC8D912B200C9300DE835D /* DetailView.swift in Sources */,
+				66EC8D912B200C9300DE835D /* AppetizerDetailView.swift in Sources */,
 				662204CB2B1BB53B00F53973 /* OrderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
