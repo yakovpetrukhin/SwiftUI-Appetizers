@@ -8,20 +8,67 @@
 import SwiftUI
 
 struct DetailView: View {
+    let appetizer: Appetizer
+    
     var body: some View {
         ZStack {
-            Image(systemName: "camera" )
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width: 200, height: 200)
             Rectangle()
-                .ignoresSafeArea()
-                .opacity(/*@START_MENU_TOKEN@*/0.8/*@END_MENU_TOKEN@*/)
-                .blur(radius: 10, opaque: true)
+                .fill(.white)
+                
+            VStack {
+                Image("asian-flank-steak")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300)
+                    
+                
+                Text(appetizer.name)
+                    .font(.title2)
+                    .fontWeight(.semibold)
+                
+                Text(appetizer.description)
+                    .multilineTextAlignment(.center)
+                    .padding()
+                
+                HStack {
+                    AppetizerDetailCell(nutritionLabel: "Calories", nutritionValue: 700)
+                    AppetizerDetailCell(nutritionLabel: "Carbs", nutritionValue: 11)
+                    AppetizerDetailCell(nutritionLabel: "Protein", nutritionValue: 13)
+                }
+                .padding()
+                
+                Button {
+                    
+                } label: {
+                    Label("$\(appetizer.price, specifier: "%.2f") - Add to Order", image: "")
+                        .fontWeight(.semibold)
+                }
+                .buttonStyle(.borderedProminent)
+                .controlSize(.large)
+                .tint(.brandPrimary)
+                .buttonBorderShape(.roundedRectangle(radius: 10))
+                .padding()
+            }
         }
+        .frame(width: 300, height: 500)
+        .clipShape(RoundedRectangle(cornerRadius: 20))
+        .padding(50)
     }
 }
 
 #Preview {
-    DetailView()
+    DetailView(appetizer: MockData.sampleAppetizer)
+}
+
+
+struct AppetizerDetailCell: View {
+    let nutritionLabel: String
+    let nutritionValue: Int
+    
+    var body: some View {
+        VStack {
+            Text(nutritionLabel)
+            nutritionLabel == "Calories" ? Text("\(nutritionValue)") : Text("\(nutritionValue) g")
+        }
+    }
 }

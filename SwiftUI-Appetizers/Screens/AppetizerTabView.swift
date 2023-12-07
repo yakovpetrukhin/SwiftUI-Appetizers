@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct AppetizerTabView: View {
+    
+    @State var detailOpen = true
+    
     var body: some View {
         TabView {
-            AppetizerListView()
+            ZStack {
+                AppetizerListView()
+                    .blur(radius: detailOpen ? 15 : 0)
+             
+                detailOpen ? DetailView(appetizer: MockData.sampleAppetizer) : nil
+            }
                 .tabItem {
                     Image(systemName: "house")
-//                        .environment(\.symbolVariants, .none) // by default the icon is filled even when the non fill 
+//                        .environment(\.symbolVariants, .none) // by default the icon is filled even when the non fill
 //                                                              // version of sf symbol is used. This line changes it to be the outline
                     Text("Home")
                 }
-                .blur(radius: 15)
+                
             
             AccountView()
                 .tabItem {
