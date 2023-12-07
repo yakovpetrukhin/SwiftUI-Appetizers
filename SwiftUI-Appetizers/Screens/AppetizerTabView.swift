@@ -17,7 +17,6 @@ struct AppetizerTabView: View {
 //                                                              // version of sf symbol is used. This line changes it to be the outline
                     Text("Home")
                 }
-                .blur(radius: 15)
             
             AccountView()
                 .tabItem {
