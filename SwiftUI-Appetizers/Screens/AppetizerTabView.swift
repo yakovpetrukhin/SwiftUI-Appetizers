@@ -8,27 +8,20 @@
 import SwiftUI
 
 struct AppetizerTabView: View {
+    
+    @EnvironmentObject var order: Order
+    
     var body: some View {
         TabView {
             AppetizerListView()
-                .tabItem {
-                    Image(systemName: "house")
-//                        .environment(\.symbolVariants, .none) // by default the icon is filled even when the non fill 
-//                                                              // version of sf symbol is used. This line changes it to be the outline
-                    Text("Home")
-                }
+                .tabItem { Label("Home", systemImage: "house") }
             
             AccountView()
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Account")
-                }
+                .tabItem { Label("Account", systemImage: "person") }
             
             OrderView()
-                .tabItem {
-                    Image(systemName: "bag")
-                    Text("Order")
-                }
+            .tabItem { Label("Order", systemImage: "bag") }
+            .badge(order.items.count)
         }
         .tint(Color.brandPrimary)
     }

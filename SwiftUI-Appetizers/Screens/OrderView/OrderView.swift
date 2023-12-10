@@ -29,9 +29,11 @@ struct OrderView: View {
                     Button {
                         print("ordedr placed")
                     } label: {
-                        APButton(title: "\(order.totalPrice, specifier: "%.2f") - Place Order")
+                        Text("\(order.totalPrice, specifier: "%.2f") - Place Order")
                     }
                     .padding(.bottom, 25)
+                    .modifier(StandardButtonStyle())
+
                 }
                 .navigationTitle("🧾 Orders")
                 
