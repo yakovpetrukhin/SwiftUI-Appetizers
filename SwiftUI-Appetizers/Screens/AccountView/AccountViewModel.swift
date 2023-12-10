@@ -27,7 +27,7 @@ final class AccountViewModel: ObservableObject {
     }
     
     func retrieveUser() {
-        guard let userData = userData else { return } // no need for alert, if there is no userdata we just intitalize an empty user
+        guard let userData else { return } // no need for alert, if there is no userdata we just intitalize an empty user
         
         do {
             user = try JSONDecoder().decode(User.self, from: userData)
