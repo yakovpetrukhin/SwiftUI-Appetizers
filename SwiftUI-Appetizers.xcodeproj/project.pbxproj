@@ -32,6 +32,7 @@
 		66EC8DD32B253EC800DE835D /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC8DD22B253EC800DE835D /* EmptyState.swift */; };
 		66EC8DD52B25455500DE835D /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC8DD42B25455500DE835D /* Order.swift */; };
 		66EC8DD72B25744E00DE835D /* CustomModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC8DD62B25744E00DE835D /* CustomModifiers.swift */; };
+		66EC8DDC2B26A60D00DE835D /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66EC8DDB2B26A60D00DE835D /* Date+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		66EC8DD22B253EC800DE835D /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		66EC8DD42B25455500DE835D /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		66EC8DD62B25744E00DE835D /* CustomModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomModifiers.swift; sourceTree = "<group>"; };
+		66EC8DDB2B26A60D00DE835D /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +175,7 @@
 			children = (
 				662204DA2B1CD5C000F53973 /* Color+Ext.swift */,
 				66EC8DCD2B22932200DE835D /* String+Ext.swift */,
+				66EC8DDB2B26A60D00DE835D /* Date+Ext.swift */,
 			);
 			path = Extensionns;
 			sourceTree = "<group>";
@@ -323,6 +326,7 @@
 				662204CD2B1BC5FE00F53973 /* Appetizer.swift in Sources */,
 				662204D32B1BEC5C00F53973 /* APError.swift in Sources */,
 				66EC8DCA2B22806A00DE835D /* XDismissButton.swift in Sources */,
+				66EC8DDC2B26A60D00DE835D /* Date+Ext.swift in Sources */,
 				662204C72B1BB51B00F53973 /* AccountView.swift in Sources */,
 				66EC8DD52B25455500DE835D /* Order.swift in Sources */,
 				66EC8DCC2B228FE000DE835D /* AccountViewModel.swift in Sources */,

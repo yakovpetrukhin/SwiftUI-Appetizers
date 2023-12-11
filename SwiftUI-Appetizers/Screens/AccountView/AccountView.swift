@@ -39,10 +39,15 @@ struct AccountView: View {
                         .submitLabel(.continue)
                     
                     
-                    DatePicker("Birthday",
-                               selection: $viewModel.user.birthdate,
-                               displayedComponents: .date)
+//                    DatePicker("Birthday",
+//                               selection: $viewModel.user.birthdate,
+//                               displayedComponents: .date)
+            
                     
+                    DatePicker("Birthday", 
+                               selection: $viewModel.user.birthdate,
+                               in: Date().oneHundredTenYearsAgo...Date().eighteenYearsgo,
+                               displayedComponents: .date)
                     Button {
                         viewModel.saveChanges()
                     } label: {
